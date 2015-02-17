@@ -46,7 +46,7 @@ color: #000;
 
 .hireme{
   position : relative;
-  left : 70%;
+  right : -60%;
   color:#000;
   font-size: 0.6em;
 line-height: 1.3em;
@@ -54,6 +54,16 @@ font-family: 'Karla';
 text-rendering: optimizeLegibility;
 }
 
+.seemore{
+    position : relative;
+  right : -90%;
+  color:#000;
+  font-size: 0.8em;
+line-height: 1.3em;
+font-family: 'Karla';
+text-rendering: optimizeLegibility;
+    
+}
 .infoSection{
 font-size: 0.6em;
 line-height: 1.3em;
@@ -121,7 +131,13 @@ display: inline-block;
 color: #000;
 }
 
+#researchSec > li {
+    font-size: .9em;
+}
 
+#subli {
+    font-size: .8em;
+}
 @media only screen and (max-width : 568px) {
     body{
 padding: 0 1em 1em;
@@ -134,7 +150,12 @@ margin: 1em 0;
 display: block;
          padding-right: 0;
     }
-}
+
+    .rightSection{
+      visibility: hidden;
+    }
+
+} <!-- end of media query -->
 </style>
 
  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">  -->
@@ -143,7 +164,7 @@ display: block;
 
 <div class="leftSection">
 <div class="hello">
-<span><img src="shiv_clip2.png" alt="shiv" height="70px" width="70px"class="img-rounded"></span>
+<span><img src="shiv_clip2.png" alt="shiv" height="70px" width="70px"class="img-rounded"></span><span class="hireme">[resume]</span>
 <span class="hireme">[hire me]</span>
 
 </br>
@@ -189,6 +210,15 @@ display: block;
         </div>
         <br>
       <h1>Research projects</h1>
+        <ul id="researchSec">
+            <li class="nextrow">Mobile Cloud Piracy.
+                <p id="subli">Final year research project. Paper published.</p>
+            </li>
+            <li class="nextrow">Fuzzy inference model.
+                <p id="subli">One of the inventors alongside Deepak. S and Aswin. V</p>
+                <p id="subli">Patent Pending.</p>
+            </li>
+        </ul>
       <br>
       <h1>More projects and hacks</h1>
 
@@ -246,6 +276,8 @@ display: block;
 
         </div>
         <br>
+        <span class="seemore">[see more]</span>
+<!--
         <p>Let's get the whole "linebreak" thing out of the way. The next paragraph contains two phrases separated by a single newline character:</p>
         <p>Roses are red<br>Violets are blue</p>
         <p>The next paragraph has the same phrases, but now they are separated by two spaces and a newline character:</p>
@@ -264,6 +296,7 @@ display: block;
         <p>My email addy is <a href="mailto:tom@github.com">tom@github.com</a>.</p>
         <h2>Math is hard, let's go shopping</h2>
         <p>In first grade I learned that 5 &gt; 3 and 2 &lt; 7. Maybe some arrows. 1 -&gt; 2 -&gt; 3. 9 &lt;- 8 &lt;- 7.</p>
+-->
 
 </div>  <! -- Right Section -- >
 
