@@ -44,9 +44,18 @@ color: #000;
 
 }
 
+.shortDesc{
+    position : relative;
+    left:2%;
+  color:#000;
+  font-size: 0.5em;
+line-height: 1.3em;
+font-family: 'Karla';
+text-rendering: optimizeLegibility;
+}
 .hireme{
   position : relative;
-  right : -60%;
+  right : -20%;
   color:#000;
   font-size: 0.6em;
 line-height: 1.3em;
@@ -164,7 +173,7 @@ display: block;
 
 <div class="leftSection">
 <div class="hello">
-<span><img src="shiv_clip2.png" alt="shiv" height="70px" width="70px"class="img-rounded"></span><span class="hireme">[resume]</span>
+    <span><img src="shiv_clip2.png" alt="shiv" height="70px" width="70px"class="img-rounded"></span><span class="shortDesc">Graduate fellow, University of Arizona.</span><span class="hireme">[resume]</span>
 <span class="hireme">[hire me]</span>
 
 </br>
@@ -188,15 +197,15 @@ display: block;
 <div class="rightSection">
 
 <h1>Projects</h1>
-        <p>This predominantly shows my work-exp.</p>
+        <p id="subli">This predominantly shows my work-exp.</p>
 
-        <div class="row">
+        <div class="row nextrow">
           <div class="col-md-2">
             <img src="img/ufree.png" alt="Ufree" height="70px" width="70px"class="img-rounded">
           </div>
 
           <div class="col-md-2">
-            <img src="img/nowd.png" alt="shiv" height="70px" width="70px"class="img-rounded">
+            <img src="img/nowd.png" style="border: 2px solid #a1a1a1;" alt="shiv" height="70px" width="70px"class="img-rounded">
           </div>
 
           <div class="col-md-2">
@@ -212,11 +221,13 @@ display: block;
       <h1>Research projects</h1>
         <ul id="researchSec">
             <li class="nextrow">Mobile Cloud Piracy.
-                <p id="subli">Final year research project. Paper published.</p>
+                <p id="subli">Final year research project using attribute and re-encryption based key management technique to overcome the privacy issues while offloading data from mobile to Cloud.</p>
+                <p id="subli">Paper published.</p>
             </li>
             <li class="nextrow">Fuzzy inference model.
-                <p id="subli">One of the inventors alongside Deepak. S and Aswin. V</p>
-                <p id="subli">Patent Pending.</p>
+                <p id="subli">One of the inventors alongside Deepak. S and Aswin. V of a handheld diagnosic tool that
+                  uses fuzzy logic for tracking down symptoms.</p>
+                <p id="subli">Patent Pending, IPO India publication.</p>
             </li>
         </ul>
       <br>
@@ -224,7 +235,7 @@ display: block;
 
           <div class="row nextrow">
           <div class="col-md-2">
-            <img src="img/urluploader.png" alt="Ufree" height="70px" width="70px"class="img-rounded">
+            <img src="img/urluploader.png" style="border: 2px solid #a1a1a1;" alt="Ufree" height="70px" width="70px"class="img-rounded">
           </div>
 
           <div class="col-md-2">
@@ -259,7 +270,7 @@ display: block;
           </div>
 
           <div class="col-md-2">
-            <img src="img/daybook.png" alt="shiv" height="70px" width="70px"class="img-rounded">
+            <img src="img/daybook.png" style="border: 2px solid #a1a1a1;" alt="shiv" height="70px" width="70px"class="img-rounded">
           </div>
 
           <div class="col-md-2">
