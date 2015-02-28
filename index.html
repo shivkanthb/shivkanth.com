@@ -173,6 +173,12 @@ display: block;
     }
 
 } <!-- end of media query -->
+
+ .content {
+    display: none;
+    padding : 5px;
+}
+
 </style>
 
  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">  -->
@@ -295,7 +301,17 @@ display: block;
 
         </div>
         <br>
-        <span class="seemore">[see more]</span>
+        <span class="seemore expander" id="seemore">[see more]</span>
+        <div class="content">
+        <ul>
+            <li>This is just some random content.</li>
+            <li>This is just some random content.</li>
+            <li>This is just some random content.</li>
+            <li>This is just some random content.</li>
+        </ul>
+      </div>
+
+        
 <!--
         <p>Let's get the whole "linebreak" thing out of the way. The next paragraph contains two phrases separated by a single newline character:</p>
         <p>Roses are red<br>Violets are blue</p>
@@ -320,12 +336,33 @@ display: block;
 </div>  <! -- Right Section -- >
 
 
+
+
 <!-- including jquery and javascript files -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/redhotsly/simple-expand/master/src/simple-expand.min.js"></script>
 
+ <script>
+ $('.expander').simpleexpand();
+// $(".seemore").click(function () {
 
+//     $header = $(this);
+//     //getting the next element
+//     $content = $header.next();
+//     //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+//     $content.slideToggle(500, function () {
+//         //execute this after slideToggle is done
+//         //change text of header based on visibility of content div
+//         $header.text(function () {
+//             //change text based on condition
+//             return $content.is(":visible") ? "[see less]" : "[see more]";
+//         });
+//     });
+
+// });
+ </script>
 </body>
 </html>
