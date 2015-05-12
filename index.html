@@ -6,48 +6,71 @@
 
 
 <link href="css/bootstrap.min.css" rel="stylesheet">
-
 <style type="text/css">
 @import url(http://css-reset-sheet.googlecode.com/svn/reset.css);
 @import url(http://fonts.googleapis.com/css?family=Karla);
 @import url(http://fonts.googleapis.com/css?family=Inconsolata);
 
-html, *{
-    font-family: 'Karla', sans-serif;
+    
+@font-face {
+		font-family: "Monosten";
+		font-weight: 400;
+		src: url("monosten-e.ttf");
+	}
+@font-face {
+		font-family: "Monosten";
+		font-weight: 700;
+		src: url("monosten-c.ttf");
+    }
+    
+html,h1, #name, *{
+    font-family: 'Monosten','Karla', sans-serif;
     font-weight: 400;
-    background-color: #fff;
+    background-color: #f5f5f5;
 color: #999;
-       font-size: 1.5em;
+       font-size: 1.2em;
        line-height: 1.3em;
        text-rendering: optimizeLegibility;
 }
 
 .leftSection{
-position: fixed;
+/*position: fixed;*/
+    font-size: 1.5em;
+    font-family: 'Karla', sans-serif;
+    width:80%;
+    margin-left: 10%;
+
 /*width:50%;*/
 }
 
 .rightSection{
-width:50%;
-float:right;
+width:80%;
+/*float:right;*/
 padding-bottom:50px;
-padding-top:100px;
-font-size: 0.7em;
+padding-top:0px;
+font-size: 1.3em;
 line-height: 1.3em;
-font-family: 'Inconsolata', sans-serif;
-color: #000;
+font-family: 'Monosten','PT Mono','Karla','Inconsolata', sans-serif;
+color: #999;
+    margin-left: 10%;
 }
 
 li{
     font-family: 'Inconsolata', sans-serif;
-color: #000;
+color: #999;
 
 }
 
+.rightSection > h1 {
+    font-family: 'Monosten','Karla', sans-serif;
+    font-weight: 400;
+    color: #DADFE1;
+}
+    
 .shortDesc{
     position : relative;
-    left:2%;
-  color:#000;
+    left:0%;
+  color:#999;
   font-size: 0.5em;
 line-height: 1.3em;
 font-family: 'Karla';
@@ -55,8 +78,8 @@ text-rendering: optimizeLegibility;
 }
 .hireme{
   position : relative;
-  right : -20%;
-  color:#000;
+  right : -10%;
+  color:#999;
   font-size: 0.6em;
 line-height: 1.3em;
 font-family: 'Karla';
@@ -68,13 +91,13 @@ text-rendering: optimizeLegibility;
 }
 
 .hireme > a:hover {
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 .seemore{
     position : relative;
   right : -90%;
-  color:#000;
+  color:#999;
   font-size: 0.8em;
 line-height: 1.3em;
 font-family: 'Karla';
@@ -93,7 +116,7 @@ ol,ul {
 }
 
 .infoSection > li > b {
-    color:#000;
+    color:#999;
     display: inline-block;
 font-weight: normal;
 width: 5rem;
@@ -108,7 +131,7 @@ width: 5rem;
 }
 
 .infoSection > h1{
-    color: #000;
+    color: #999;
     
 }
 
@@ -118,18 +141,27 @@ width: 5rem;
 
 }
 
+#projSec {
+    font-family: "Monosten";
+    font-weight: 400;
+    font-size: 1em;
+}
+#projSec > li{
+    margin-top: 0.5em;
+}
+    
 body{
 padding: 0 3em 3em;
 }
 .hello{
-margin: 2.4em 0;
+margin: 2.5em 0;
 }
 .hello > h1{
 color: #000;
 }
 
 .nextrow{
-  margin-top: 5px;
+  margin-top: 10px;
 }
 .links{
     list-style: none;
@@ -149,7 +181,7 @@ color: #000;
 }
 
 #researchSec > li {
-    font-size: .9em;
+    font-size: 1.3em;
 }
 
 #subli {
@@ -179,6 +211,11 @@ display: block;
     padding : 5px;
 }
 
+    #projSec{
+        font-family: "Monosten";
+    font-weight: 400;
+    font-size: 1.3em;
+    }
 </style>
 
  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">  -->
@@ -187,12 +224,16 @@ display: block;
 
 <div class="leftSection">
 <div class="hello">
-    <span><img src="shiv_clip2.png" alt="shiv" height="70px" width="70px"class="img-rounded"></span><span class="shortDesc">Graduate fellow, University of Arizona.</span><span class="hireme"><a href="https://represent.io/shivkanthb" target="_blank">[resume]</a></span>
+    <span><img src="avatar.png" alt="shiv" height="70px" width="70px"class="img-rounded"></span>
+<!--
+    <span class="shortDesc">Graduate fellow, University of Arizona.</span><span class="hireme"><a href="https://represent.io/shivkanthb" target="_blank">[resume]</a></span>
 <span class="hireme">[hire me]</span>
+-->
 
 </br>
-
-
+<h1 id="name">Shivkanth B</h1>
+    <span class="shortDesc">Graduate fellow, University of Arizona.</span>
+<!--
 <ul class="infoSection">
         <h1>Shivkanth <b>B</b></h1>
       <li><b>profession</b>I do full stack web and mobile. Also a 0.5 designer.</li>
@@ -203,142 +244,41 @@ display: block;
       <li><b>LinkedIn</b><a href="https://www.linkedin.com/in/shivkanthb" target="_blank">/shivkanthb</a></li>
       <li><b>Current</b><a href=""></a>Research Assistant, Dept. of Computer Science</li>
 </ul>
+-->
 <!-- <h1>Hello, Minimal Sites is taking a nap.</h1>
 <p>See you in 2015.</p> -->
 </div>
+    
+    
+    
 </div>   <! -- left section -->
 
 <div class="rightSection">
-
-<h1>Projects</h1>
-        <p id="subli">This predominantly shows my work-exp.</p>
-
-        <div class="row nextrow">
-          <div class="col-md-2">
-            <img src="img/ufree.png" alt="Ufree" height="70px" width="70px"class="img-rounded">
-          </div>
-
-          <div class="col-md-2">
-            <img src="img/nowd.png" style="border: 2px solid #a1a1a1;" alt="shiv" height="70px" width="70px"class="img-rounded">
-          </div>
-
-          <div class="col-md-2">
-            <img src="img/hurb.png" alt="shiv" height="70px" width="70px"class="img-rounded">
-          </div>
-
-<!--
-          <div class="col-md-2">
-            <img src="img/mitosis.jpg" alt="shiv" height="70px" width="70px"class="img-rounded">
-          </div>
--->
-
-        </div>
-        <br>
-      <h1>Research projects</h1>
+      <h1>Research</h1>
         <ul id="researchSec">
-            <li class="nextrow">Mobile Cloud Piracy.
-                <p id="subli">Final year research project using attribute and re-encryption based key management technique to overcome the privacy issues while offloading data from mobile to Cloud.</p>
-                <p id="subli">Paper published.</p>
+            <li class="nextrow">Check out my paper on Mobile Cloud Piracy <a href="">here.</a>
             </li>
-            <li class="nextrow">Fuzzy inference model.
-                <p id="subli">One of the inventors alongside Deepak. S and Aswin. V of a handheld diagnosic tool that
-                  uses fuzzy logic for tracking down symptoms.</p>
-                <p id="subli">Patent Pending, IPO India publication.</p>
+            <li class="nextrow">I have a patent pending on a Fuzzy inference model based handheld diagnostic tool.
             </li>
         </ul>
-      <br>
-        <span class="seemore expander" id="seemore">[see more]</span>
+      <br><br>
+    <h1>Projects</h1>
+    <br>
+    <div id="projSec">
+    <p> Ufree, eventify, mood tunes us, hurb, now drifting, url uploader, sounddown, instatube, machasunite, nowd co, forecasty, shorts?, pancake presentation, textledge, handle. </p>
+        </div>
 <!--
-      <h1>More projects and hacks</h1>
-
-          <div class="row nextrow">
-          <div class="col-md-2">
-            <img src="img/urluploader.png" style="border: 2px solid #a1a1a1;" alt="Ufree" height="70px" width="70px"class="img-rounded">
-          </div>
-
-          <div class="col-md-2">
-            <img src="img/moodtunes.png" alt="shiv" height="70px" width="70px"class="img-rounded">
-          </div>
-
-          <div class="col-md-2">
-            <img src="img/instatube.png" alt="shiv" height="70px" width="70px"class="img-rounded">
-          </div>
-
-          <div class="col-md-2">
-            <img src="img/wordslice.png" alt="shiv" height="70px" width="70px"class="img-rounded">
-          </div>
-
-          <div class="col-md-2">
-            <img src="img/nowdriftapp.png" alt="shiv" height="70px" width="70px"class="img-rounded">
-          </div>
-
-          <div class="col-md-2">
-            <img src="img/sounddown.png" alt="shiv" height="70px" width="70px"class="img-rounded">
-          </div>
-
-        </div>
-
-        <div class="row nextrow">
-          <div class="col-md-2">
-            <img src="img/chromeos.png" alt="Ufree" height="70px" width="70px"class="img-rounded">
-          </div>
-
-          <div class="col-md-2">
-            <img src="img/onlineBookstore.png" alt="shiv" height="70px" width="70px"class="img-rounded">
-          </div>
-
-          <div class="col-md-2">
-            <img src="img/daybook.png" style="border: 2px solid #a1a1a1;" alt="shiv" height="70px" width="70px"class="img-rounded">
-          </div>
-
-          <div class="col-md-2">
-            <img src="img/machasunite.png" alt="shiv" height="70px" width="70px"class="img-rounded">
-          </div>
-
-          <div class="col-md-2">
-            <img src="img/nowdriftapp.png" alt="shiv" height="70px" width="70px"class="img-rounded">
-          </div>
-
-          <div class="col-md-2">
-            <img src="img/sounddown.png" alt="shiv" height="70px" width="70px"class="img-rounded">
-          </div>
-
-        </div>
+    <ul id="projSec">
+            <li>ufree</li>
+            <li>hurb</li>
+    
+    </ul>
 -->
+
         <br>
         
-<!--
-        <div class="content">
-        <ul>
-            <li>This is just some random content.</li>
-            <li>This is just some random content.</li>
-            <li>This is just some random content.</li>
-            <li>This is just some random content.</li>
-        </ul>
-      </div>
--->
 
-        
-<!--
-        <p>Let's get the whole "linebreak" thing out of the way. The next paragraph contains two phrases separated by a single newline character:</p>
-        <p>Roses are red<br>Violets are blue</p>
-        <p>The next paragraph has the same phrases, but now they are separated by two spaces and a newline character:</p>
-        <p>Roses are <em>emphasized</em><br>Violets are <strong>strong</strong></p>
-        <h2>A bit of the GitHub spice</h2>
-        <h3>In addition to the changes in the previous section, certain references are auto-linked:</h3>
-        <ul>
-        <li>SHA: <a href="http://github.com/mojombo/god/commit/be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2">be6a8cc</a></li>
-        <li>User@SHA ref: <a href="http://github.com/mojombo/god/commit/be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2">mojombo@be6a8cc</a></li>
-        <li>User/Project@SHA: <a href="http://github.com/mojombo/god/commit/be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2">mojombo/god@be6a8cc</a></li>
-        <li>#Num: <a href="http://github.com/mojombo/god/issues/#issue/1">#1</a></li>
-        <li>User/#Num: <a href="http://github.com/mojombo/god/issues/#issue/1">mojombo#1</a></li>
-        <li>User/Project#Num: <a href="http://github.com/mojombo/god/issues/#issue/1">mojombo/god#1</a></li>
-        </ul>
-        <h3>These are dangerous goodies though, and we need to make sure email addresses don't get mangled:</h3>
-        <p>My email addy is <a href="mailto:tom@github.com">tom@github.com</a>.</p>
-        <h2>Math is hard, let's go shopping</h2>
-        <p>In first grade I learned that 5 &gt; 3 and 2 &lt; 7. Maybe some arrows. 1 -&gt; 2 -&gt; 3. 9 &lt;- 8 &lt;- 7.</p>
--->
+
 
 </div>  <! -- Right Section -- >
 
@@ -352,24 +292,6 @@ display: block;
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://raw.githubusercontent.com/redhotsly/simple-expand/master/src/simple-expand.min.js"></script>
 
- <script>
- $('.expander').simpleexpand();
-// $(".seemore").click(function () {
 
-//     $header = $(this);
-//     //getting the next element
-//     $content = $header.next();
-//     //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
-//     $content.slideToggle(500, function () {
-//         //execute this after slideToggle is done
-//         //change text of header based on visibility of content div
-//         $header.text(function () {
-//             //change text based on condition
-//             return $content.is(":visible") ? "[see less]" : "[see more]";
-//         });
-//     });
-
-// });
- </script>
 </body>
 </html>
