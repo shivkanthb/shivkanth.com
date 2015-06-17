@@ -6,352 +6,71 @@
 
 
 <link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="custom.css" rel="stylesheet">
 <style type="text/css">
-@import url(http://css-reset-sheet.googlecode.com/svn/reset.css);
-@import url(http://fonts.googleapis.com/css?family=Karla);
-@import url(http://fonts.googleapis.com/css?family=Inconsolata);
-
     
-@font-face {
-		font-family: "Monosten";
-		font-weight: 400;
-		src: url("monosten-e.ttf");
-	}
-@font-face {
-		font-family: "Monosten";
-		font-weight: 700;
-		src: url("monosten-c.ttf");
-    }
-    
-html,h1, #name, *{
-    font-family: 'Monosten','Karla', sans-serif;
-    font-weight: 400;
-    background-color: #fff;
-color: #999;
-       font-size: 1.2em;
-       line-height: 1.3em;
-       text-rendering: optimizeLegibility;
-}
 
-.leftSection{
-/*position: fixed;*/
-    font-size: 1.5em;
-    font-family: 'Karla', sans-serif;
-    width:70%;
-    margin-left: 15%;
-
-/*width:50%;*/
-}
-
-.rightSection{
-width:70%;
-/*float:right;*/
-padding-bottom:50px;
-padding-top:0px;
-font-size: 1.3em;
-line-height: 1.3em;
-font-family: 'Monosten','PT Mono','Karla','Inconsolata', sans-serif;
-color: #999;
-    margin-left: 15%;
-}
-
-li{
-    font-family: 'Inconsolata', sans-serif;
-color: #999;
-
-}
-
-.rightSection > h1 {
-    font-family: 'Monosten','Karla', sans-serif;
-    font-weight: 400;
-    color: #DADFE1;
-}
-    
-.shortDesc{
-    position : relative;
-    left:0%;
-  color:#999;
-  font-size: 0.5em;
-line-height: 1.3em;
-font-family: 'Karla';
-text-rendering: optimizeLegibility;
-}
-.hireme{
-  position : relative;
-  right : -10%;
-  color:#999;
-  font-size: 0.6em;
-line-height: 1.3em;
-font-family: 'Karla';
-text-rendering: optimizeLegibility;
-}
-
-.hireme > a {
-  color: grey;
-}
-
-.hireme > a:hover {
-  color: #fff;
-  text-decoration: none;
-}
-.seemore{
-    position : relative;
-  right : -90%;
-  color:#999;
-  font-size: 0.8em;
-line-height: 1.3em;
-font-family: 'Karla';
-text-rendering: optimizeLegibility;
-    
-}
-.infoSection{
-font-size: 1em;
-line-height: 1.3em;
-font-family: 'Monosten';
-    font-weight: 400;
-text-rendering: optimizeLegibility;
-}
-
-ol,ul {
-    list-style-type: none;
-}
-
-.infoSection > li > b {
-    color:#999;
-    display: inline-block;
-font-weight: normal;
-width: 7em;
-}
-
-.infoSection > li > a {
- color: grey;
-} 
-
-.infoSection > li {
-    color: grey;
-}
-
-.infoSection > h1{
-    color: #999;
-    
-}
-
-.infoSection > li > a:hover {
-  color: #f5f5f5;
-  text-decoration: none;
-
-}
-
-#projSec {
-    font-family: "Monosten";
-    font-weight: 400;
-    font-size: 1em;
-}
-#projSec > li{
-    margin-top: 0.5em;
-}
-    
-body{
-padding: 0 3em 3em;
-}
-.hello{
-margin: 2.5em 0;
-}
-.hello > h1{
-color: #000;
-}
-
-.nextrow{
-  margin-top: 10px;
-}
-.links{
-    list-style: none;
-    padding-right: 6em;
-    padding-top: .4em;
-    border-top: 1px solid #000;
-display: inline-block;
-         font-size: .7em;
-}
-.links > li{
-display: inline-block;
-         margin-right: 0.4em;
-}
-.links > li > a{
-    text-decoration: none;
-color: #000;
-}
-
-#researchSec {
-    font-family: "Monosten";
-    font-weight: 400;
-    font-size: 1em;
-}
-#researchSec > li {
-    font-size: 1.3em;
-}
-
-#subli {
-    font-size: .8em;
-}
-@media only screen and (max-width : 568px) {
-    body{
-padding: 0 1em 1em;
-         font-size: .9em;
-    }
-    .hello{
-margin: 1em 0;
-    }
-    .links{
-display: block;
-         padding-right: 0;
-    }
-
-    .rightSection{
-      visibility: hidden;
-    }
-
-} <!-- end of media query -->
-
- .content {
-    display: none;
-    padding : 5px;
-}
-
-   
-    #projSec{
-        font-family: "Monosten";
-    font-weight: 400;
-    font-size: 1.3em;
-    }
-    
-    #link {
-        color: #999;
-        font-family: "Monosten";
-            font-size: 0.9em;
-        text-decoration: underline;
-    }
-    
-    #link:hover {
-        color: #DADFE1;
-        font-family: "Monosten";
-            font-size: 0.9em;
-        text-decoration: underline;
-    }
-    
-    
-    #plink {
-        color: #999;
-        font-family: "Monosten";
-            font-size: 1em;
-        
-    }
-    
-     #plink:hover {
-        color: #DADFE1;
-        font-family: "Monosten";
-            font-size: 1em;
-        
-    }
 </style>
 
- <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">  -->
-</head>
 <body>
-
-<div class="leftSection">
-<div class="hello">
+<div class="topSection">
+  <div class="hello">
     <span><img src="avatar.png" alt="shiv" height="70px" width="70px"class="img-rounded"></span>
-<!--
-    <span class="shortDesc">Graduate fellow, University of Arizona.</span><span class="hireme"><a href="https://represent.io/shivkanthb" target="_blank">[resume]</a></span>
-<span class="hireme">[hire me]</span>
--->
-
-</br>
-<h1 id="name">Shivkanth B</h1>
+    </br>
+    <h1 id="name">Shivkanth B</h1>
     <span class="shortDesc">Graduate fellow, University of Arizona.</span>
-<!--
-<ul class="infoSection">
-        <h1>Shivkanth <b>B</b></h1>
-      <li><b>profession</b>I do full stack web and mobile. Also a 0.5 designer.</li>
-      <li><b>email</b><a href="mailto:shivkanthb@live.com">shivkanthb@live.com</a></li>
-      <li><b>twitter</b><a href="https://twitter.com/shivkanthb" target="_blank">@shivkanthb</a></li>
-      <li><b>github</b><a href="http://github.com/shivkanthb/" target="_blank">/shivkanthb</a></li>
-      <li><b>quora</b><a href="https://www.quora.com/Shiv-Kanth" target="_blank">/Shiv-Kanth</a></li>
-      <li><b>LinkedIn</b><a href="https://www.linkedin.com/in/shivkanthb" target="_blank">/shivkanthb</a></li>
-      <li><b>Current</b><a href=""></a>Research Assistant, Dept. of Computer Science</li>
-</ul>
--->
-<!-- <h1>Hello, Minimal Sites is taking a nap.</h1>
-<p>See you in 2015.</p> -->
+  </div>
 </div>
-    
-    
-    
-</div>   <! -- left section -->
 
-<div class="rightSection">
-      <h1>Research</h1>
+<div class="contentSection ">
+      <h1 class="subhead">Research</h1>
+
         <ul id="researchSec">
             <li class="nextrow">Check out my paper on <a id="link" href="http://www.ijarcce.com/upload/2015/april-15/IJARCCE%20114.pdf" target="_blank">Mobile Cloud Piracy</a>.
             </li>
             <li class="nextrow">I have a <a id="link" href="http://image.slidesharecdn.com/patentpublicationinindiabyintellectualpropertyofficeinindiaon25april2014listofearlypublicationsofpat-140501014707-phpapp02/95/patent-publication-in-india-by-intellectual-property-office-in-india-on-25-april-2014-list-of-early-publications-of-patent-applications-filled-by-foreign-companies-in-india-under-section-11-a2-46-638.jpg?cb=1398909254" target="_blank">patent pending</a> on a Fuzzy inference model based handheld diagnostic tool.
             </li>
         </ul>
-      <br><br>
-    <h1>Projects</h1>
-    <br>
-    <div id="projSec">
-    <p> <a id="plink" href="http://ufreeapp.com" target="_blank">Ufree</a>, eventify, <a href="http://moodtunes.us" target="_blank" id="plink">mood tunes us</a>, <a id="plink" href="http://growhurb.com">hurb</a>, </br><a id="plink" href="http://nowdrifting.com">now drifting</a>,<a id="plink" href="http://urluploader.com"> url uploader</a>, <a id="plink" href="http://sounddown.in">sounddown</a>, <a id="plink" href="http://instatube.cf">instatube</a>, <a id="plink" href="http://machasunite.com">machasunite</a>, <a id="plink" href="http://nowd.herokuapp.com">nowd co</a>, forecasty, shorts?, pancake presentation, <a id="plink" href="http://textledge.com" target="_blank">textledge</a>, handle. </p>
-<!--
-    <ul>
-            <li>ufree</li>
-            <li>eventify</li>
-        <li>mood tunes us</li>
-            <li>hurb</li>
-        <li>now drifting</li>
-            <li>url uploader</li>
-        <li>sounddown</li>
-            <li>instatube</li>
-         <li>machasunite</li>
-            <li>nowd co</li>
-         <li>sounddown</li>
-            <li>forecasty</li>
-         <li>shorts?</li>
-            <li>pancake presentation</li>
-         <li>textledge</li>
-            <li> handle</li>
-    
-    </ul>
--->
-        </div>
+        <br>
 
-<br><br>
-<h1>Social</h1>
-<br>
-<ul class="infoSection">
-        
-      <li><b>profession</b>I do full stack web and mobile.</li>
-      <li><b>email</b><a href="mailto:shivkanthb@live.com">shivkanthb@live.com</a></li>
-    <li><b>twitter</b><a href="https://twitter.com/shivkanthb" target="_blank">@shivkanthb</a></li>
-      <li><b>github</b><a href="http://github.com/shivkanthb/" target="_blank">/shivkanthb</a></li>
-      <li><b>quora</b><a href="https://www.quora.com/Shiv-Kanth" target="_blank">/Shiv-Kanth</a></li>
-      <li><b>LinkedIn</b><a href="https://www.linkedin.com/in/shivkanthb" target="_blank">/shivkanthb</a></li>
-      <li><b>Current</b><a href=""></a>Research Assistant, Dept. of Computer Science.</li>
-</ul>
-<!--
-    <ul id="projSec">
-            <li>ufree</li>
-            <li>hurb</li>
-    
-    </ul>
--->
+        <h1 class="subhead">Projects</h1>
+         <ul id="projSection">
+              <li class="nextrow"><a href="" id="link">ufree</a></li>
+              <li class="nextrow"><a href="" id="link">eventify</a></li>
+              <li class="nextrow"><a href="" id="link">buck</a></li>
+              <li class="nextrow"><a href="" id="link">mood tunes us</a></li>
+              <li class="nextrow"><a href="" id="link">hurb</a></li>
+              <li class="nextrow"><a href="" id="link">now drifting</a></li>
+              <li class="nextrow"><a href="" id="link">url uploader</a></li>
+              <li class="nextrow"><a href="" id="link">sounddown</a></li>
+              <li class="nextrow"><a href="" id="link">instatube</a></li>
+              <li class="nextrow"><a href="" id="link">machasunite</a></li>
+              <li class="nextrow"><a href="" id="link">nowd co</a></li>
+              <li class="nextrow"><a href="" id="link">sounddown</a></li>
+              <li class="nextrow"><a href="" id="link">forecasty</a></li>
+              <li class="nextrow">shorts?</li>
+              <li class="nextrow">pancake presentation</li>
+              <li class="nextrow"><a href="" id="link">textledge</a></li>
+              <li class="nextrow"><a href="" id="link">handle</a></li>
+         </ul>
 
         <br>
-       <h1 ><a href="" id="link">Resume</a></h1> 
+        <h1 class="subhead">Social</h1>
+          <ul class="infoSection">
 
-
-
-</div>  <! -- Right Section -- >
+          <li><b>profession</b>I do full stack web and mobile.</li>
+          <li><b>email</b><a href="mailto:shivkanthb@live.com">shivkanthb@live.com</a></li>
+          <li><b>twitter</b><a href="https://twitter.com/shivkanthb" target="_blank">@shivkanthb</a></li>
+          <li><b>github</b><a href="http://github.com/shivkanthb/" target="_blank">/shivkanthb</a></li>
+          <li><b>quora</b><a href="https://www.quora.com/Shiv-Kanth" target="_blank">/Shiv-Kanth</a></li>
+          <li><b>LinkedIn</b><a href="https://www.linkedin.com/in/shivkanthb" target="_blank">/shivkanthb</a></li>
+          <li><b>Current</b><a href=""></a>Research Assistant, Dept. of Computer Science.</li>
+          </ul>
+          <br>
+          
+          <h1 class="subhead"><a href="" id="link">Resume</a></h1>
+          <br>
+</div>  <!-- contentSection -->
 
 
 

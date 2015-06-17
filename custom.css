@@ -1,0 +1,139 @@
+@font-face {
+font-family: "Monosten";
+font-weight: 400;
+src: url("monosten-e.ttf");
+}
+@font-face {
+font-family: "Monosten";
+font-weight: 700;
+src: url("monosten-c.ttf");
+}
+
+html, #name, *{
+font-family: 'Monosten';
+font-weight: 400;
+background-color: #fff;
+color: #999;
+font-size: 1.2em;
+line-height: 1.3em;
+text-rendering: optimizeLegibility;
+padding: 0;
+}
+
+body{
+padding: 0 3em 3em;
+}
+
+.hello{
+margin: 2.5em 0;
+}
+.hello > h1{
+color: #000;
+}
+
+.shortDesc{
+position : relative;
+left:0%;
+color:#999;
+font-size: 0.6em;
+line-height: 1.3em;
+font-family: 'Monosten';
+text-rendering: optimizeLegibility;
+}
+
+.topSection{
+font-size: 1.5em;
+font-family: 'Monosten';
+width:70%;
+margin-left: 15%;
+} 
+
+
+
+.contentSection{
+width:70%;
+padding-bottom:50px;
+padding-top:0px;
+font-size: 1.1em;
+line-height: 1.3em;
+font-family: 'Monosten';
+color: #999;
+margin-left: 15%;
+}  
+
+.subhead {
+font-family: 'Monosten';
+font-weight: 400;
+font-size: 1.8em;
+line-height: 1.3em;
+color: #DADFE1;
+}
+
+/* researhSec Styling */
+
+#researchSec {
+font-family: "Monosten";
+font-weight: 400;
+font-size: 1.2em;
+}
+#researchSec > li {
+font-size: 1.2em;
+}
+
+.nextrow{
+margin-top: 15px;
+}
+
+
+ol,ul {
+list-style-type: none;
+}
+
+
+#link {
+color: #999;
+font-family: "Monosten";
+font-size: 1em;
+text-decoration: underline;
+}
+
+#link:hover {
+color: #DADFE1;
+font-family: "Monosten";
+font-size: 1em;
+text-decoration: underline;
+}
+
+/* infoSection styling */
+
+.infoSection {
+font-size: 1em;
+line-height: 1.3em;
+font-family: 'Monosten';
+font-weight: 400;
+text-rendering: optimizeLegibility;  
+}
+
+.infoSection > li > b {
+color:#999;
+display: inline-block;
+font-weight: normal;
+width: 7em;
+}
+
+.infoSection > li > a {
+color: grey;
+} 
+
+.infoSection > li {
+color: grey;
+}
+
+.infoSection > h1{
+color: #999;
+}
+
+.infoSection > li > a:hover {
+color: #f5f5f5;
+text-decoration: none;
+}
